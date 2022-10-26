@@ -1,0 +1,51 @@
+/* color scheme sourced from http: //khroma.co/generator/ */
+:root {
+    /*  */
+    --moon-mist: #d4daca;
+    --pickled-bluewood: #2b4951;
+    /*  */
+    --nebula: #cadbd5;
+    --cerise: #d9228d;
+    /*  */
+    --tonys-pink: #e79a93;
+    --mimosa: #fcfdc9;
+    --iceberg: #d7f3f4;
+    --grey-bull: #91a3af;
+    /*  */
+    --cavern-pink: #e0b8b3;
+    --bali-hai: #839da9;
+    --lime-spruce: #2c4045;
+    --geyser: #dfe8e6;
+}
+
+body {
+    display: flex;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    
+    height: 8vh;
+    width: 100%;
+    background-color: var(--moon-mist);
+}
+
+nav {
+    display: flex;
+
+}
+nav a h2 {
+    margin: 10px;
+}
