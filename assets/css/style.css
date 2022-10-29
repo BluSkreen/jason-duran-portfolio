@@ -16,13 +16,22 @@
     --bali-hai: #839da9;
     --lime-spruce: #2c4045;
     --geyser: #dfe8e6;
+
+    --header-width: 93%;
+}
+
+html {
+    display: flex;
+    justify-content: center;
 }
 
 body {
     display: flex;
     flex-flow: column wrap-reverse;
-    /* align-content: space-between; */
+    align-content: center;
     height: 1800px;
+    width: 100%;
+    max-width: 1800px;
     background-color: var(--geyser);
     /* flex-wrap: wrap; */
     /* align-items: flex-start; */
@@ -31,26 +40,28 @@ body {
 
 header {
     order: 2;
-    /* Header text start in bottom left of box */
+    /* Header text starts in bottom left of box */
     display: flex;
     justify-content: left;
     align-items: flex-end;
-    /* variable height */
     height: 110px;
-    /* 94 */
-    width: 93vw; 
-    background-color: var(--lime-spruce);
+    width: var(--header-width); 
+    /* background-color: var(--lime-spruce); */
     /* spaceing for the blocky style */
     margin-top: 130px;
-    margin-left: 3vw;
-    margin-right: -19vw;
+    margin-left: 30px;
+    margin-right: -220px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
 }
 
 header h1 {
     font-size: 4em;
     font-weight: 900;
-    margin-bottom: 12vh;
-    margin-left: 6vh;
+    /* puts text above the header box */
+    margin-bottom: 130px;
+    margin-left: 60px;
 }
 
 /*  */
@@ -59,27 +70,35 @@ header h1 {
 
 aside {
     order: 1;
-    width: 150px;
+    width: 160px;
     height: 1700px;
     /* margin for the blocky style*/
-    margin-top: 3vh;
-    margin-right: 9vw; 
+    margin-top: 30px;
+    margin-right: 90px; 
     /* padding to position the text inside*/
-    padding-top: 22vh;
-    background-color: var(--bali-hai);
+    padding-top: 230px;
+    /* background-color: var(--bali-hai); */
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
 }
 
 nav ul {
     /* The text stacks downward  */
     display: flex;
     flex-direction: column;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 200;
-    padding-left: 1vw;
+    padding-left: .5em;
 }
 
 nav li {
-    padding-block: 0.2em;
+    padding-block: 0.4em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 /*  */
 /* ### EVERTHING BELOW WILL FIT ON LEFT SIDE */
@@ -92,31 +111,77 @@ h2 {
 main {
     order: 3;
     display: flex;
-    /* Protfolio, About Me, and the footer(footer belongs to body)
-    will stack along the left side */
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* Protfolio and About Me will stack in the middle*/
+    /* flex-direction: column; */
     height: 1200px;
-    width: 76vw;
+    width: 100%;
+    max-width: calc(var(--header-width) - 220px);
 }
 
 .portfolio {
     display: flex;
-    justify-content: left ;
+    flex-wrap: wrap;
+    justify-content: center;
     height: 800px;
-    width: 76vw;
+    width: 100%;
+    max-width: calc(var(--header-width) - 220px);
 }
 
-.portfolio h2 {
+#portfolio-h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--cavern-pink);
-    height: 5vw;
-    width: 650px;
-    transform-origin: top left;
-    transform: rotate(-90deg);
-    margin-top: 45vh;
-    margin-left: 2vw;
+    /* background-color: var(--nebula); */
+    /* color: var(--cerise); */
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    /* Make Text and box sideways, then face it inwards */
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    height: 950px;
+    width: 70px;
+    margin-top: 40px;
+    /* margin-left: 10px; */
+}
+
+/* FOR TESTING */
+section div {
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+
+#refractorIMG {
+    height: 400px;
+    width: 900px;
+    margin: 3px;
+}
+
+#illusionsIMG {
+    height: 300px;
+    width: 350px;
+    margin: 3px;
+}
+
+#droneIMG {
+    height: 300px;
+    width: 350px;
+    margin: 3px;
+}
+
+#globalProjectIMG {
+    height: 300px;
+    width: 350px;
+    margin: 3px;
+}
+
+#lightV2IMG {
+    height: 300px;
+    width: 350px;
+    margin: 3px;
 }
 
 .aboutMe {
@@ -125,5 +190,5 @@ main {
 
 footer {
     order: 4;
-    width: 76vw;
+    width: calc(var(--header-width) - 220px);
 }
