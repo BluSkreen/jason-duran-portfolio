@@ -158,6 +158,10 @@ section div {
     height: 400px;
     width: 900px;
     margin: 3px;
+    background-image: url("../images/unsplashFood.png");
+    background-position: center;
+    background-size: 100%;
+
 }
 
 #illusionsIMG {
