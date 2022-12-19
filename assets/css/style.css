@@ -154,20 +154,23 @@ section div {
     border-color: black;
 }
 
-#refractorIMG {
+#dev-dive {
     height: 400px;
     width: 900px;
     margin: 3px;
-    background-image: url("../images/unsplashFood.png");
+    background-image: url("../images/DevDive.PNG");
     background-position: center;
     background-size: 100%;
 
 }
 
-#illusionsIMG {
+#prepUrself {
     height: 300px;
     width: 350px;
     margin: 3px;
+    background-image: url("../images/unsplashFood.png");
+    background-position: center;
+    background-size: 100%
 }
 
 #droneIMG {
