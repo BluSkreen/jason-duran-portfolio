@@ -7,4 +7,4 @@ This is my portfolio!
 
 https://bluskreen.github.io/jason-duran-portfolio/
 
-![.](./assets/images/devdiveAdded.PNG)
+![.](./assets/images/screencap.PNG)
