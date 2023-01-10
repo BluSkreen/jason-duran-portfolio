@@ -114,7 +114,7 @@ main {
     flex-wrap: wrap;
     /* Protfolio and About Me will stack in the middle*/
     /* flex-direction: column; */
-    height: 1200px;
+    height: 1500px;
     width: 100%;
     max-width: calc(var(--header-width) - 220px);
 }
@@ -166,36 +166,89 @@ section div {
 
 #prepUrself {
     height: 300px;
-    width: 350px;
+    width: 375px;
     margin: 3px;
     background-image: url("../images/unsplashFood.png");
     background-position: center;
     background-size: 100%
 }
 
-#droneIMG {
+#weather-dashboard {
     height: 300px;
-    width: 350px;
+    width: 375px;
     margin: 3px;
+    background-image: url("../images/weatherDashboard.PNG");
+    background-position: center;
+    background-size: 100%
 }
 
-#globalProjectIMG {
+#README-generator {
     height: 300px;
-    width: 350px;
+    width: 375px;
     margin: 3px;
+    background-image: url("../images/readme.PNG");
+    background-position: center;
+    background-size: 100%
 }
 
-#lightV2IMG {
+#social-network-API {
     height: 300px;
-    width: 350px;
+    width: 375px;
     margin: 3px;
+    background-image: url("../images/social-network-api.PNG");
+    background-position: center;
+    background-size: 100%
 }
 
 .aboutMe {
     width: 76vw;
 }
 
+#aboutMe-h2 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 5px;
+    padding-left: 25px;
+    margin-right: 60px;
+    /* background-color: var(--nebula); */
+    /* color: var(--cerise); */
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+
+#about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    padding-inline: 20%;
+    font-size: 30px;
+}
+
+#footer-h2 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 5px;
+    padding-left: 25px;
+    /* background-color: var(--nebula); */
+    /* color: var(--cerise); */
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+
 footer {
     order: 4;
-    width: calc(var(--header-width) - 220px);
+    width: 76vw;
+}
+
+#footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 20px;
 }
