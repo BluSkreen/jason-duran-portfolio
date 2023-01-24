@@ -154,11 +154,11 @@ section div {
     border-color: black;
 }
 
-#dev-dive {
+#hotel-malie{
     height: 400px;
     width: 900px;
     margin: 3px;
-    background-image: url("../images/DevDive.PNG");
+    background-image: url("../images/hotelMalie.PNG");
     background-position: center;
     background-size: 100%;
 
@@ -182,11 +182,11 @@ section div {
     background-size: 100%
 }
 
-#README-generator {
+#dev-dive {
     height: 300px;
     width: 375px;
     margin: 3px;
-    background-image: url("../images/readme.PNG");
+    background-image: url("../images/DevDive.PNG");
     background-position: center;
     background-size: 100%
 }
